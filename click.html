@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #btn{
+            padding: 20px 30px ;
+            font-size: 30px;
+            background-color: green;
+            color: white;
+            text-transform: uppercase;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            box-shadow: 0px 0px 50px green;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" id="btn">click here</button>
+    <img src="#" id="img" alt="">
+
+    <script>
+        let btn=document.querySelector('#btn')
+        let img=document.querySelector('#img')
+
+        btn.addEventListener('click',function click() {
+            img.style.width="500px"
+            img.style.height="500px"
+            img.style.borderRadius="20px"
+            img.style.boxShadow="0px 0px 50px "
+
+            img.src="img/nature.jpg"
+
+            btn.style.display="none"
+        })
+    </script>
+</body>
+</html>
